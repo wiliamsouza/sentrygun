@@ -16,7 +16,7 @@ difference(){
 	// Base
 	difference() {
 		cylinder(h=12*mm, r=10*cm);
-		
+
 		translate([0,0,-epsilon	]) difference() {
 			cylinder(h=7*mm, r=9.5*cm);
 			translate([0,0,-epsilon	]) cylinder(h=7*mm, r=1.5*cm);
@@ -28,6 +28,7 @@ difference(){
 
 	// Center hole
 	translate([0,0,-1.5]) boltHole(8, length=15*mm);
-	
+
 }
 bearing(pos=[0, 0, 12*mm], model=SkateBearing);
+
